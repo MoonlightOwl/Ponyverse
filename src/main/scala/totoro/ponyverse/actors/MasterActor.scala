@@ -1,11 +1,11 @@
 package totoro.ponyverse.actors
 
-import akka.actor.Actor
+import akka.actor.{Actor, ActorLogging}
 
-class MasterActor extends Actor {
+class MasterActor extends Actor with ActorLogging {
   override def receive: Receive = {
     case message =>
-      println(message)
+      log.info(message.toString)
       context stop self
   }
 }

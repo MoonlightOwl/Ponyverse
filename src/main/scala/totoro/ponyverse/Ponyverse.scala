@@ -7,6 +7,6 @@ object Ponyverse {
   def main(args: Array[String]): Unit = {
     val system = ActorSystem("ponyverse")
     val master = system.actorOf(Props[MasterActor], "master")
-    master ! "Hello World!"
+    master ! "Hello Ponyverse!"
   }
 }
