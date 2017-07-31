@@ -1,12 +1,11 @@
 package totoro.ponyverse
 
 import akka.actor.{ActorSystem, Props}
-import totoro.ponyverse.actors.MasterActor
+import totoro.ponyverse.actors.tcp.TCPServerActor
 
 object Ponyverse {
   def main(args: Array[String]): Unit = {
     val system = ActorSystem("ponyverse")
-    val master = system.actorOf(Props[MasterActor], "master")
-    master ! "Hello Ponyverse!"
+    val server = system.actorOf(Props[TCPServerActor], "tcp-server")
   }
 }
