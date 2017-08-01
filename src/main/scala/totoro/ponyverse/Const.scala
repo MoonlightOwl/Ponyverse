@@ -1,5 +1,5 @@
 package totoro.ponyverse
 
 object Const {
-  val Port = 0
+  val Port = 10030
 }
