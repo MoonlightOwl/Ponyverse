@@ -22,7 +22,7 @@ class TCPServerActor extends Actor with ActorLogging {
       context stop self
 
     case c @ Connected(_, _) =>
-      val handler = context.actorOf(Props[EchoHandler])
+      val handler = context.actorOf(Props[ChannelHandler])
       val connection = sender()
       connection ! Register(handler)
   }
