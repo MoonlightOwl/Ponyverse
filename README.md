@@ -2,8 +2,6 @@
 
 (WIP) Message broker for OpenComputers.
 
-Design document: [Google.Docs](https://docs.google.com/document/d/1RYuytEaUmkomfjNSeNSq1BnJu0rWJfIbcIZYIQ_A2qI/edit?usp=sharing).
-
 ## Scope
 
 Ponyverse main part is online 24/7 server, which plays a role of `bridge`,
@@ -28,6 +26,8 @@ A client may be anything - a computer, a phone, a web site or ingame OC device.
  
 These parts are independent software packages. Ponyverse uses a special low-level network
 protocol via TCP to communication between different parts.
+
+Protocol details: [Google.Docs](https://docs.google.com/document/d/1RYuytEaUmkomfjNSeNSq1BnJu0rWJfIbcIZYIQ_A2qI/edit?usp=sharing).
 
 ## License
 [MIT License](LICENSE)
